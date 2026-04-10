@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Iyanu's Personal Website
+  </title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f8fafc;
+      color: #1e293b;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background: linear-gradient(135deg, #2563eb, #38bdf8);
+      color: white;
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      margin-bottom: 15px;
+    }
+
+    .name {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      opacity: 0.95;
+    }
+
+    nav {
+      margin-top: 25px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      background: white;
+      color: #2563eb;
+      padding: 10px 18px;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #e0f2fe;
+      transform: translateY(-2px);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 30px auto;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 25px;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      color: #2563eb;
+      margin-bottom: 15px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f1f5f9;
+      padding: 20px;
+      border-radius: 14px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e293b;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="janet.jpeg" alt="Profile Picture" class="profile-pic">
+    <h1 class="name">Iyanuoluwa Olatunbosun</h1>
+    <p class="tagline">Web Developer | Frontend Builder | Creative Mind</p>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">My Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="home">
+      <h2>Home</h2>
+      <p>Welcome to my personal website. I build clean and responsive websites with modern tools and creative ideas.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am Iyanuoluwa Olatunbosun, a web developer who loves creating modern websites and learning new things in tech.</p>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>Portfolio Website</h3>
+          <p>A website to show my skills and projects.</p>
+        </div>
+        <div class="card">
+          <h3>Landing Page</h3>
+          <p>A clean landing page for a business or brand.</p>
+        </div>
+        <div class="card">
+          <h3>Mini App</h3>
+          <p>A simple interactive web application.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: iyanu@gmail.com</p>
+      <p>Phone: +234 7085623397</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Iyanuoluwa Olatunbosun</p>
+  </footer>
+</body>
+</html>
